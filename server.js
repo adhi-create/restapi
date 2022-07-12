@@ -21,4 +21,4 @@ app.get('/products/:id',(req,res)=>{
     return res.json(newData)
 },
 )
-app.listen(5000,()=> console.log('Server running...'));
+app.listen( process.env.PORT,()=> console.log('Server running...'));
