@@ -14,10 +14,10 @@ const users = [
     },
 ]
 app.get('/users',(req,res)=>{
-    res.json(products)
+    res.json(users)
 })
-app.get('/products/:id',(req,res)=>{
-    const newData = products.filter(item =>item.id.toString() === req.params.id);
+app.get('/users/:id',(req,res)=>{
+    const newData = users.filter(item =>item.id.toString() === req.params.id);
     return res.json(newData)
 },
 )
